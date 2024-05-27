@@ -13,8 +13,7 @@ const famousQuotes = [
       "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking",
   },
   {
-    Eleanor_Roosevelt:
-      "The future belongs to those who believe in the beauty of their dreams",
+    name: "The future belongs to those who believe in the beauty of their dreams",
   },
   {
     Oprah_Winfrey:
@@ -38,7 +37,43 @@ const famousQuotes = [
     Martin_Luther_King_Jr:
       "Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that",
   },
-  { Eleanor_Roosevelt: "Do one thing every day that scares you" },
+  { Eleanor_Roosevelt: "Do one thing every day that scares you." },
+
+  { Benjamin_Franklin: "Well done is better than well said" },
+
+  {
+    Helen_Keller:
+      "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.",
+  },
+
+  {
+    Aristotle:
+      "It is during our darkest moments that we must focus to see the light.",
+  },
+
+  {
+    Ralph_Waldo_Emerson:
+      "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+  },
+
+  { Oscar_Wilde: "Be yourself; everyone else is already taken." },
+
+  {
+    Maya_Angelou:
+      "You will face many defeats in life, but never let yourself be defeated.",
+  },
+  {
+    Henry_David_Thoreau:
+      "Go confidently in the direction of your dreams! Live the life you've imagined.",
+  },
+  {
+    Abraham_Lincoln:
+      "In the end, it's not the years in your life that count. It's the life in your years.",
+  },
+  {
+    Babe_Ruth:
+      "Never let the fear of striking out keep you from playing the game.",
+  },
 ];
 
 btn.addEventListener("click", () => {
@@ -49,7 +84,7 @@ btn.addEventListener("click", () => {
 
   const authorName = Object.keys(randomQuote).toString();
   const quoteContent = Object.values(randomQuote).toString();
-  
+
   quote.textContent = quoteContent;
-  author.textContent = authorName;  
+  author.textContent = authorName;
 });
